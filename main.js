@@ -24,7 +24,7 @@ loader.load(
 
     //file loaded add to scene 
     object = gltf.scene;
-    
+
     object.position.y -= 1.25; // Move model down
     camera.position.y += 1.5;
 
@@ -82,60 +82,6 @@ animate()
 
 
 
-
-
-
-/*  Create the cube
-const cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
-const cubeMaterial = new THREE.MeshBasicMaterial({ color: "red" });
-const cubeMesh = new THREE.Mesh(cubeGeometry, cubeMaterial);
-scene.add(cubeMesh);
-
-
-const edgesGeometry = new THREE.EdgesGeometry(cubeGeometry)
-const edgesMaterial = new THREE.LineBasicMaterial({color: "black"})
-const cubeEdges = new THREE.LineSegments(edgesGeometry, edgesMaterial)
-scene.add(cubeEdges)
-
-// Create the camera
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 40);
-camera.position.z = 5;
-
-// Renderer setup
-const canvas = document.querySelector('canvas.threejs');
-const renderer = new THREE.WebGLRenderer({ canvas: canvas });
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-
-// rotational interactivity
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true; // Smooth movement
-
-// Animation 
-function animate() {
-    requestAnimationFrame(animate);
-    
-    // cube rotation 
-    cubeMesh.rotation.x += 0.01;
-    cubeMesh.rotation.y += 0.01;
-    cubeEdges.rotation.x += 0.01;
-    cubeEdges.rotation.y += 0.01;
-    
-    controls.update(); 
-    renderer.render(scene, camera);
-}
-
-// Handle window resizing
-window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-});
-
-//animation
-animate();
- 
- */
 
 
 
